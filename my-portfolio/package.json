@@ -12,6 +12,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.8",
     "clsx": "^2.1.1",
+    "gsap": "^3.13.0",
     "locomotive-scroll": "^4.1.4",
     "lucide-react": "^0.513.0",
     "motion": "^12.16.0",
