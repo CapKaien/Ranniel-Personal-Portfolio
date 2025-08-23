@@ -115,7 +115,7 @@ export default function Details() {
             EXPERTISE
           </div>
           <div className="text-center text-3xl sm:text-4xl font-extrabold text-white mb-10 tracking-wide uppercase">
-            SOFTWARE SKILLS
+            TECH SKILLS
           </div>
           {/* Animated horizontal scroll */}
           <div className="relative overflow-hidden w-full">
