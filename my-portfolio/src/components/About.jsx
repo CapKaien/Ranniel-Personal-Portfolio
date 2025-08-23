@@ -8,105 +8,86 @@ export default function About({ scrollRef }) {
 
 
   return (
-    <main className="w-full min-h-screen flex flex-col md:flex-row bg-[#0E0E0E] text-white px-3 sm:px-6 md:px-20 py-8 md:py-12 box-border">
-      {/* Mobile Header: visible only on mobile */}
-      <div className="flex flex-col lg:hidden w-full px-2 sm:px-6 pt-6 pb-4">
-        <h1 className="text-4xl sm:text-5xl font-extrabold mb-2 text-white">
-          Ranniel Abueg
-        </h1>
-        <h2 className="text-xl sm:text-2xl font-semibold text-neutral-300 mb-3">
-          Front End Designer/Developer
-        </h2>
-        <p className="text-base text-neutral-400 mb-6">
-          I build responsive, accessible, and user-friendly web applications
-          using modern technologies like React and Tailwind CSS.
-        </p>
-        {/* Socials */}
-        <div className="flex gap-4 mt-2 mb-2 text-[#c7c7c7]">
-          <a
-            href="https://facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition"
-          >
-            <FaFacebook className="text-2xl" />
-          </a>
-          <a
-            href="https://github.com/CapKaien"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition"
-          >
-            <FaGithub className="text-2xl" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ranniel-abueg-a082a636a/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition"
-          >
-            <FaLinkedin className="text-2xl" />
-          </a>
-          <a
-            href="https://www.instagram.com/ran_abueg/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition"
-          >
-            <FaInstagram className="text-2xl" />
-          </a>
-        </div>
-      </div>
-      {/* Left column: only name, title, socials */}
-      <aside className="hidden lg:flex w-full lg:max-w-lg flex-col justify-start px-4 sm:px-8 lg:px-12 pt-12 lg:pt-24 pb-8 lg:pb-10 z-10 bg-transparent">
-        <div>
-          <h1 className="text-4xl sm:text-5xl font-extrabold mb-2 text-white">
-            Ranniel Abueg
-          </h1>
-          <h2 className="text-xl sm:text-2xl font-semibold text-neutral-300 mb-3">
-            Front End Designer/Developer
-          </h2>
-          <p className="text-base text-neutral-400 mb-10">
-            I build responsive, accessible, and user-friendly web applications
-            using modern technologies like React and Tailwind CSS.
-          </p>
-        </div>
-        {/* Socials */}
-        <div className="flex gap-4 mt-8 mb-6 text-[#c7c7c7] px-2">
-          <a
-            href="https://facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition"
-          >
-            <FaFacebook className="text-2xl" />
-          </a>
-          <a
-            href="https://github.com/CapKaien"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition"
-          >
-            <FaGithub className="text-2xl" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ranniel-abueg-a082a636a/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition"
-          >
-            <FaLinkedin className="text-2xl" />
-          </a>
-          <a
-            href="https://www.instagram.com/ran_abueg/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition"
-          >
-            <FaInstagram className="text-2xl" />
-          </a>
-        </div>
-      </aside>
+<main className="w-full min-h-screen flex flex-col md:flex-row bg-[#0E0E0E] text-white px-3 sm:px-6 md:px-20 py-8 md:py-12 box-border">
+      
+  {/* Mobile Header: visible only on mobile */}
+  <div className="flex flex-col lg:hidden w-full px-2 sm:px-6 pt-6 pb-4 items-center text-center">
+    {/* Profile Image */}
+    <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-neutral-700 shadow-md mb-4">
+      <img
+        src="/assets/1752769186406.jpg" // replace with your image path
+        alt="Ranniel Abueg"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    <h1 className="text-4xl sm:text-5xl font-extrabold mb-2 text-white">
+      Ranniel Abueg
+    </h1>
+    <h2 className="text-xl sm:text-2xl font-semibold text-neutral-300 mb-3">
+      Front End Designer/Developer
+    </h2>
+    <p className="text-base text-neutral-400 mb-6">
+      I build responsive, accessible, and user-friendly web applications
+      using modern technologies like React and Tailwind CSS.
+    </p>
+    {/* Socials */}
+    <div className="flex gap-4 mt-2 mb-2 text-[#c7c7c7]">
+      <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+        <FaFacebook className="text-2xl" />
+      </a>
+      <a href="https://github.com/CapKaien" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+        <FaGithub className="text-2xl" />
+      </a>
+      <a href="https://www.linkedin.com/in/ranniel-abueg-a082a636a/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+        <FaLinkedin className="text-2xl" />
+      </a>
+      <a href="https://www.instagram.com/ran_abueg/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+        <FaInstagram className="text-2xl" />
+      </a>
+    </div>
+  </div>
+
+  {/* Left column: only name, title, socials */}
+  <aside className="hidden lg:flex w-full lg:max-w-lg flex-col justify-start items-center text-center px-4 sm:px-8 lg:px-12 pt-12 lg:pt-24 pb-8 lg:pb-10 z-10 bg-transparent">
+    {/* Profile Image */}
+    <div className="w-52 h-52 rounded-full overflow-hidden border-4 border-neutral-700 shadow-md mb-6">
+      <img
+        src="/assets/1752769186406.jpg" // replace with your image path
+        alt="Ranniel Abueg"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    <h1 className="text-4xl sm:text-5xl font-extrabold mb-2 text-white">
+      Ranniel Abueg
+    </h1>
+    <h2 className="text-xl sm:text-2xl font-semibold text-neutral-300 mb-3">
+      Front End Designer/Developer
+    </h2>
+    <p className="text-base text-neutral-400 mb-10">
+      I build responsive, accessible, and user-friendly web applications
+      using modern technologies like React and Tailwind CSS.
+    </p>
+
+    {/* Socials */}
+    <div className="flex gap-4 mt-4 mb-6 text-[#c7c7c7]">
+      <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+        <FaFacebook className="text-2xl" />
+      </a>
+      <a href="https://github.com/CapKaien" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+        <FaGithub className="text-2xl" />
+      </a>
+      <a href="https://www.linkedin.com/in/ranniel-abueg-a082a636a/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+        <FaLinkedin className="text-2xl" />
+      </a>
+      <a href="https://www.instagram.com/ran_abueg/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+        <FaInstagram className="text-2xl" />
+      </a>
+    </div>
+  </aside>
+
+
       {/* Scroll container: always rendered for Locomotive Scroll */}
       <section
         ref={scrollRef}
