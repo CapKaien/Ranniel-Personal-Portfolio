@@ -1,8 +1,8 @@
 import './index.css';  
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import LocomotiveScroll from 'locomotive-scroll';
-import 'locomotive-scroll/dist/locomotive-scroll.css';
+// import LocomotiveScroll from 'locomotive-scroll';
+// import 'locomotive-scroll/dist/locomotive-scroll.css';
 import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from "react-router-dom";
 
 //components
@@ -13,6 +13,7 @@ import Works from './components/Works';
 import AllWorks from "./components/AllWorks";
 import Skills from "./components/Skills";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 function AppContent() {
   const scrollRef = useRef(null);
@@ -21,26 +22,24 @@ function AppContent() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    let scroll;
-    if (location.pathname === "/") {
-      scroll = new LocomotiveScroll({
-        el: scrollRef.current,
-        smooth: true,
-        lerp: 0.08,
-      });
-    } else if (location.pathname === "/about") {
-      scroll = new LocomotiveScroll({
-        el: aboutScrollRef.current,
-        smooth: true,
-        lerp: 0.08,
-      });
-    }
-    return () => {
-      if (scroll) scroll.destroy();
-    };
+    // let scroll;
+    // if (location.pathname === "/") {
+    //   scroll = new LocomotiveScroll({
+    //     el: scrollRef.current,
+    //     smooth: true,
+    //     lerp: 0.08,
+    //   });
+    // } else if (location.pathname === "/about") {
+    //   scroll = new LocomotiveScroll({
+    //     el: aboutScrollRef.current,
+    //     smooth: true,
+    //     lerp: 0.08,
+    //   });
+    // }
+    // return () => {
+    //   if (scroll) scroll.destroy();
+    // };
   }, [location.pathname]);
-
-
 
   return (
     <>
@@ -61,6 +60,7 @@ function AppContent() {
               <Details />
               <Works />
               <Skills />
+              <Footer />
             </motion.div>
           }
         />

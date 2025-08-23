@@ -1,4 +1,14 @@
 const works = [
+   {
+    title: "Lovato",
+    subtitle: "Personal Project",
+    year: "2025",
+    image: "/assets/Lovato.png",
+    tech: ["React","TailwindCSS", "JavaScript", "GSAP", "RESTAPI", "Google Diagflow"],
+    detail:
+      "Built a one-page, animated, and responsive landing page showcasing the Lovato GL Isolator. It includes feature highlights, animated content, mock client logos via API, and a clean UI built in React. This project was built solely for an Interview task from an Australian Company.",
+    link: "https://lovato-gl-isolator.vercel.app/",
+    },
   {
     title: "ReadSpeak",
     subtitle: "Thesis Project",

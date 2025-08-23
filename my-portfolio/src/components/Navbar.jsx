@@ -61,8 +61,8 @@ export default function Navbar() {
             About
           </Link>
           <a
-            href="/assets/CV_Abueg_2025.pdf"
-            download="CV_Abueg_2025.pdf"
+            href="/assets/Abueg_CV.pdf"
+            download="Abueg_CV.pdf"
             className="text-[#c7c7c7] hover:underline hover:text-[#c7c7c7]"
           >
             Resumé
@@ -139,8 +139,8 @@ export default function Navbar() {
               About
             </Link>
             <a
-              href="/assets/CV_Abueg_2025.pdf"
-              download="CV_Abueg_2025.pdf"
+              href="/assets/Abueg_CV.pdf"
+              download="Abueg_CV.pdf"
               className="px-4 py-2 text-[#c7c7c7] hover:bg-neutral-800"
             >
               Resume

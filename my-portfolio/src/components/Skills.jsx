@@ -1,6 +1,27 @@
 import { motion } from "framer-motion";
-import { FaPencilRuler, FaMobileAlt, FaPalette, FaBolt, FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaGithub } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiCanva, SiMysql, SiPython } from "react-icons/si";
+import {
+  FaPencilRuler,
+  FaMobileAlt,
+  FaPalette,
+  FaBolt,        // used for "Development" card + REST API logo
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaBootstrap,
+  FaGithub,
+} from "react-icons/fa";
+
+import {
+  SiTailwindcss,
+  SiFigma,
+  SiCanva,
+  SiMysql,
+  SiPython,
+  SiWebflow,     // ✅ Webflow logo
+  SiGreensock,   // ✅ GSAP logo
+} from "react-icons/si";
+
 
 export default function Details() {
   const cards = [
@@ -41,7 +62,12 @@ export default function Details() {
     { icon: <SiFigma size={48} color="#F24E1E" />, label: "Figma" },
     { icon: <SiCanva size={48} color="#00C4CC" />, label: "Canva" },
     { icon: <SiMysql size={48} color="#00758F" />, label: "MySQL" },
-    { icon: <FaGithub size={48} color="#fff" />, label: "GitHub" },
+    { icon: <FaGithub size={48} color="#FFFFFF" />, label: "GitHub" },
+
+    // ✅ New logos
+    { icon: <SiGreensock size={48} color="#88CE02" />, label: "GSAP" },
+    { icon: <FaBolt size={48} color="#FFB545" />, label: "REST API" },
+    { icon: <SiWebflow size={48} color="#146EF5" />, label: "Webflow" },
   ];
 
   // Duplicate the skills array for seamless infinite scroll effect
@@ -107,9 +133,12 @@ export default function Details() {
               {scrollingSkills.map((skill, idx) => (
                 <div
                   key={idx}
-                  className="bg-[#181818] border border-[#232323] rounded-xl flex flex-col items-center justify-center w-28 h-28 md:w-32 md:h-32 shadow transition"
+                  className="group bg-[#181818] border border-[#232323] rounded-xl flex flex-col items-center justify-center w-28 h-32 md:w-32 md:h-36 shadow transition"
                 >
                   {skill.icon}
+                  <span className="mt-2 text-[10px] md:text-xs text-neutral-300 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    {skill.label}
+                  </span>
                 </div>
               ))}
             </motion.div>
