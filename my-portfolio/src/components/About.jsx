@@ -327,7 +327,7 @@ export default function About({ scrollRef }) {
             </span>
           </div>
           <div className="text-sm text-neutral-400 mb-2">June 2024 — August 2024</div>
-          <div className="font-semibold text-lg text-white mb-3">UI/UX Designer Intern · Leentech Network Solutions</div>
+          <div className="font-semibold text-lg text-white mb-3">Front End Developer Intern · Leentech Network Solutions</div>
           <div className="flex gap-2 flex-wrap mb-4">
             <span className="bg-[#1e293b] text-[#38BDF8] px-3 py-1 rounded-full text-xs font-semibold">JavaScript</span>
             <span className="bg-[#1e293b] text-[#38BDF8] px-3 py-1 rounded-full text-xs font-semibold">React</span>
@@ -341,7 +341,7 @@ export default function About({ scrollRef }) {
           <div className="max-w-2xl mb-8">
             <div className="relative inline-block">
               <a
-                href="/assets/ABUEG_COC.png"
+                href="/assets/AbuegCOC.png"
                 target="_blank"
                 rel="noopener noreferrer"
                 onMouseEnter={() => setShowCert(true)}
