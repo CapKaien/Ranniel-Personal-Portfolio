@@ -326,7 +326,7 @@ export default function About({ scrollRef }) {
               <FaRegIdBadge size={28} className="text-[#1e1e1e]" />
             </span>
           </div>
-          <div className="text-sm text-neutral-400 mb-2">June 2024 — August 2024</div>
+          <div className="text-sm text-neutral-400 mb-2">300hrs | June 2024 — August 2024</div>
           <div className="font-semibold text-lg text-white mb-3">Front End Developer Intern · Leentech Network Solutions</div>
           <div className="flex gap-2 flex-wrap mb-4">
             <span className="bg-[#1e293b] text-[#38BDF8] px-3 py-1 rounded-full text-xs font-semibold">JavaScript</span>
