@@ -61,8 +61,9 @@ export default function Navbar() {
             About
           </Link>
           <a
-            href="/assets/Abueg_Resume.pdf"
-            download="Abueg_Resume.pdf"
+            href="/assets/Abueg_CV_2026.pdf"
+
+    download="Abueg_CV_2026.pdf"
             className="text-[#c7c7c7] hover:underline hover:text-[#c7c7c7]"
           >
             Resumé
